@@ -1,0 +1,2 @@
+This directory holds PySpark-processed Parquet files.
+Populated by: python pipeline/transform.py (or make pipeline)

@@ -1,0 +1,6 @@
+This directory holds the DuckDB warehouse file (tariffs.db).
+Populated by: python pipeline/load_warehouse.py (or make pipeline)
+
+To connect from SQL Workbench J:
+  Driver:  DuckDB JDBC (https://duckdb.org/docs/api/java)
+  URL:     jdbc:duckdb:/absolute/path/to/this/directory/tariffs.db

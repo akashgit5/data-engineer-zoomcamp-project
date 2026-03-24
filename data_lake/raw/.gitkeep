@@ -1,0 +1,2 @@
+This directory holds raw Parquet files downloaded from Kaggle.
+Populated by: python pipeline/ingest.py (or make pipeline)
