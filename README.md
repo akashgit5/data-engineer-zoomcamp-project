@@ -1,4 +1,4 @@
-# 🇺🇸 US Tariff Analytics Dashboard
+# US Tariff Analytics Dashboard
 
 An end-to-end data pipeline and analytics dashboard for exploring US Tariffs (2025) data — built entirely locally with no cloud account required.
 
@@ -6,7 +6,7 @@ An end-to-end data pipeline and analytics dashboard for exploring US Tariffs (20
 
 ---
 
-## 📌 Problem Description
+## Problem Description
 
 The United States has implemented a sweeping set of tariffs in 2025, affecting trade relationships with dozens of countries across hundreds of product categories. Understanding which countries face the highest tariff rates, which product sectors are most impacted, and how tariff burdens are distributed is critical for businesses, economists, and policy analysts.
 
@@ -19,7 +19,7 @@ This project builds a fully automated local data pipeline that:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────────┐    ┌─────────────────────┐
@@ -51,7 +51,7 @@ This project builds a fully automated local data pipeline that:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 us-tariff-analytics/
@@ -83,7 +83,7 @@ us-tariff-analytics/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - **Python 3.9+**
 - **Java 8 or 11** (required for PySpark) — check with `java -version`
@@ -93,7 +93,7 @@ us-tariff-analytics/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repository
 
@@ -152,22 +152,18 @@ Open your browser at **http://localhost:8501**
 
 ---
 
-## 🗄️ Connecting DuckDB to SQL Workbench
+##  Connecting DuckDB to Dbeaver
 
-DuckDB has a JDBC driver, so you can query it directly in SQL Workbench J.
+DuckDB has a JDBC driver, so you can query it directly in Dbeaver.
 
 1. Download DuckDB JDBC driver: https://duckdb.org/docs/api/java
-2. In SQL Workbench J: File → Manage Drivers → Add
-   - Name: `DuckDB`
-   - Library: path to `duckdb_jdbc-*.jar`
-   - Classname: `org.duckdb.DuckDBDriver`
-3. New Connection:
+2. New Connection:
    - URL: `jdbc:duckdb:/absolute/path/to/warehouse/tariffs.db`
    - No username/password needed
 
 ---
 
-## 📊 Dashboard Tiles
+## Dashboard Tiles
 
 ### Tile 1 — Tariff Rate by Country (Categorical Distribution)
 Bar chart showing average tariff rates imposed on each trading partner. Helps identify which countries face the steepest tariff burden.
@@ -177,7 +173,7 @@ Heatmap + bar chart showing how tariff rates vary across product categories, rev
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 make test
@@ -187,7 +183,7 @@ pytest tests/ -v
 
 ---
 
-## 🔁 Prefect Orchestration UI
+## Prefect Orchestration UI
 
 To monitor pipeline runs:
 
@@ -199,7 +195,7 @@ Then open **http://localhost:4200** in your browser.
 
 ---
 
-## 📋 Makefile Commands
+##  Makefile Commands
 
 | Command | Description |
 |---|---|
@@ -211,7 +207,7 @@ Then open **http://localhost:4200** in your browser.
 
 ---
 
-## 🧠 Data Warehouse Design
+##  Data Warehouse Design
 
 DuckDB tables are designed with query performance in mind:
 
@@ -231,6 +227,6 @@ DuckDB automatically handles columnar storage and parallel query execution — e
 
 ## 🌟 Going the Extra Mile
 
-- ✅ **Tests** — pytest suite in `tests/`
-- ✅ **Makefile** — Single-command operations
-- ✅ **CI/CD** — GitHub Actions workflow in `.github/workflows/ci.yml`
+- **Tests** — pytest suite in `tests/`
+- **Makefile** — Single-command operations
+- **CI/CD** — GitHub Actions workflow in `.github/workflows/ci.yml`
