@@ -45,7 +45,7 @@ This project builds a fully automated local data pipeline that:
 |---|---|---|
 | Orchestration | **Prefect** | Free, runs locally, beautiful UI, simple DAG definition |
 | Data Lake | **Local Parquet** | Simulates cloud object storage (S3/GCS), columnar & efficient |
-| Warehouse | **DuckDB** | Free embedded SQL engine, JDBC-compatible with SQL Workbench |
+| Warehouse | **DuckDB** | Free embedded SQL engine, JDBC-compatible with Dbeaver |
 | Transforms | **PySpark** | Industry-standard batch processing, handles large datasets |
 | Dashboard | **Streamlit** | Pure Python, fast to build, shareable |
 
@@ -220,12 +220,19 @@ DuckDB automatically handles columnar storage and parallel query execution — e
 
 ---
 
-## 📊 Dashboard/Orchestrator Preview
+## Dashboard/Orchestrator Preview
 
 ![Dashboard Screenshot](assets/dashboard.png)
 ![Orchestrator Screenshot](assets/orchestrator.png)
 
-## 🌟 Going the Extra Mile
+
+## Database tables 
+
+Here, we can view the tables created in the Database:
+![Dbeaver Screenshot](assets/dbeaver.png)
+
+
+##  Going the Extra Mile
 
 - **Tests** — pytest suite in `tests/`
 - **Makefile** — Single-command operations
